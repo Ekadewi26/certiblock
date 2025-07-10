@@ -1,0 +1,39 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "nim", "type": "string" },
+      { "internalType": "string", "name": "name", "type": "string" },
+      { "internalType": "string", "name": "program", "type": "string" },
+      { "internalType": "uint16", "name": "year", "type": "uint16" },
+      { "internalType": "string", "name": "ipfsHash", "type": "string" }
+    ],
+    "name": "addCertificate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "nim", "type": "string" }],
+    "name": "verifyCertificate",
+    "outputs": [
+      { "internalType": "string", "name": "name", "type": "string" },
+      { "internalType": "string", "name": "program", "type": "string" },
+      { "internalType": "uint16", "name": "year", "type": "uint16" },
+      { "internalType": "string", "name": "ipfsHash", "type": "string" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
